@@ -6,7 +6,7 @@ import streamlit as st
 # loading the saved model 
 loaded_model = pickle.load(open("D:/CYBER ATTACK DETECTION PROJECT/PREDICTION SYSTEM (MODEL DEPLOYMENT)/trained_model.pkl",'rb'))
 
-# creating a function for prediction 
+# creating a function for detection 
 
 def attack_prediction(input_data):
     
@@ -28,7 +28,6 @@ def attack_prediction(input_data):
 
 def main():
     # giving a title 
-    #st.title('Diabetes Prediction Application')
     st.markdown("<h1 style='text-align: center; color: blue;'>Cyber Attack Detection</h1>", unsafe_allow_html=True)
     
     # getting the input data from input user
@@ -72,10 +71,6 @@ def main():
     
     st.markdown("***")
     
-    st.markdown("""
-    About the data to be filled : 
-        
-        """)
     
     st.text("\n\n")
     st.markdown("<h3 style='text-align: center; color: blue;'>Model accuracy is 94% </h3>", unsafe_allow_html=True)
