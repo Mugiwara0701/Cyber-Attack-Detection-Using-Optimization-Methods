@@ -20,7 +20,7 @@ def attack_detection(input_data):
     result = loaded_model.predict(input_data_reshaped)
     print("The prediction is : ",result)
     
-    if (result[0] == 0):
+    if (result[0] == 'Benign'):
       return "NO ATTACK HAVE BEEN FOUND"
     else:
       return "ATTACK HAVE BEEN FOUND"
@@ -69,7 +69,22 @@ def main():
         
     st.success(detect)
     
-    #st.markdown("***")
+    st.markdown("***")
+    st.markdown(""" Connection state info:
+    
+    S0: Connection attempt seen, no reply yet\n
+    S1: Connection established, not terminated\n
+    S2: Client sents a SYN packet but not recive any ACK from server\n
+    S3: Connection established of a TCP connection\n
+    SF: Normal establishment and termination\n
+    REJ: Connection attempt rejected\n
+    RSTO: Connection established, originator aborted (sent a RST)\n
+    RSTR: Connection established, responder aborted (sent a RST)\n
+    RSTOS0: Originator sent a SYN followed by a RST, no response from responder\n
+    RSTRH: Responder sent a SYN ACK followed by a RST, no response from originator\n
+    SHR: Same as SYN_SENT (connection attempt initiated, not yet established)\n
+    OTH: No SYN seen, just midstream traffic (often used to indicate a partial connection attempt)
+    """)
     
     
     st.text("\n\n")
