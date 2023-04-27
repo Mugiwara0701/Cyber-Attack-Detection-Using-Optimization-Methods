@@ -31,7 +31,7 @@ def main():
     
     # getting the input data from input user
     duration = st.text_input("Input the duration  : ")
-    orig_bytes = st.text_input("Input the Orignal bytes : ")
+    orig_bytes = st.text_input("Input the source bytes : ")
     resp_bytesc = st.text_input("Input the response bytes : ")
     missed_bytes = st.text_input("Input the missed bytes : ")
     orig_pkts = st.text_input("Input the orignal packets: ")
