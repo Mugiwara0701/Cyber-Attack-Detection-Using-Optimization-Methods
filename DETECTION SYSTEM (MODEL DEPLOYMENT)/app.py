@@ -82,7 +82,7 @@ def main():
     st.write(" \n\n\n\n\n\n")
     st.markdown("******")
     
-    st.write("Contributor : [Akshat Kumar Nautiyal, Shivam Bhandari, Kaustubh Kukreti]")
+    st.write("Contributor : [Akshat Kumar Nautiyal, Shivam Bhandari]")
     
     
 if __name__ == '__main__':
