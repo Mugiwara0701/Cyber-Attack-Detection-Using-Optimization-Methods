@@ -1,3 +1,3 @@
 # Cyber-Attack-Detection-Using-Optimization-Methods
 
-https://tijer.org/tijer/confirmationlettermanager.php?a_rid=150600
+https://www.tijer.org/tijer/papers/TIJER2312107.pdf
